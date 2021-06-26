@@ -31,3 +31,8 @@ ping_outcome = test.results.ping
 print(download_outcome)
 print(upload_outcome)
 print(ping_outcome)
+
+#Convert to Mbps
+print(f"Download speed: {download_outcome / 1024 /1024: .3f} Mbps")
+print(f"Upload speed: {upload_outcome / 1024 /1024: .3f} Mbps")
+print(f"Ping: {ping_outcome: .3f} ms")
